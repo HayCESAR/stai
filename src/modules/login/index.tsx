@@ -12,24 +12,11 @@ export function Login() {
           fontSize='2xl'
           fontWeight='bold'
         >
-          Sign In
+          Login
         </Text>
-        <VStack spacing={4} alignItems='self-start'>
-          <Text color='#718096' fontWeight='bold'>
-            e-mail
-          </Text>
-          <Input placeholder='digite seu e-mail' />
-          <Text color='#718096' fontWeight='bold'>
-            senha
-          </Text>
-          <Input type='password' placeholder='digite sua senha' />
-          <Button color='blue.300' fontWeight='normal' variant='link'>
-            esqueceu sua senha?
-          </Button>
-        </VStack>
         <Box textAlign='center'>
           <Button borderRadius='xl' px={12} size='md' mt={6} colorScheme='pink'>
-            entrar
+            Fazer login com Google
           </Button>
         </Box>
       </Box>
