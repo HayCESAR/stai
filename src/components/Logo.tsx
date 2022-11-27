@@ -12,7 +12,6 @@ export const Logo = () => (
     <Box display="flex" alignItems="center" gap={2}>
       <Image
         boxSize='100px'
-        objectFit='cover'
         src={LogoStai}
         alt='STAI'
       />
