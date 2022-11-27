@@ -20,6 +20,20 @@ export const AvatarBox = () => {
       flexDirection={"row"}
     >
       <Avatar name={userLogado.displayName} bg="teal.300" src={userLogado.photoURL}/>
+      <Flex
+        w="full"
+        flexDirection="column"
+        gap={4}
+        justifyContent="center"
+        alignItems="flex-start"
+      >
+        <Text fontSize="sm" fontWeight="bold" pb="0" lineHeight={0}>
+          {userLogado.displayName}
+        </Text>
+        <Text as="small" color="gray.500" fontSize={12} lineHeight={0}>
+        {userLogado.email}
+        </Text>
+      </Flex>
     </Flex>
   );
 };
