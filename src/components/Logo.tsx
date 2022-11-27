@@ -1,5 +1,7 @@
-import { Box, Flex, Icon, IconButton, Text } from "@chakra-ui/react";
-import { AiFillThunderbolt, AiOutlineSearch } from "react-icons/ai";
+import React, { ReactNode } from 'react'
+
+import { Box, Flex, IconButton } from "@chakra-ui/react";
+import LogoStai from './logo-stai.png';
 
 export const Logo = () => (
   <Flex
@@ -10,15 +12,7 @@ export const Logo = () => (
     gap={4}
   >
     <Box display="flex" alignItems="center" gap={2}>
-      <Icon as={AiFillThunderbolt} fontSize={30} />
+      <IconButton variant='outline' colorScheme='red' aria-label='STAI' icon={<LogoStai />} />
     </Box>
-    <IconButton
-      variant="ghost"
-      aria-label="search"
-      icon={<AiOutlineSearch />}
-      fontSize={26}
-      color="gray.400"
-      borderRadius="50%"
-    />
   </Flex>
 );
