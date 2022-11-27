@@ -19,7 +19,7 @@ export const AvatarBox = () => {
       gap={2}
       flexDirection={"row"}
     >
-      <Avatar name={userLogado.displayName} bg="teal.300" />
+      <Avatar name={userLogado.displayName} bg="teal.300" src={userLogado.photoURL}/>
     </Flex>
   );
 };
