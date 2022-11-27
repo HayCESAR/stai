@@ -1,10 +1,10 @@
 import { AuthGoogleProvider } from "./context/authGoogle";
-import { AppRoutes } from "./routes/routes";
+import { AppRouter } from "./routes/routes";
 
 export const App = () => {
   return (
     <AuthGoogleProvider>
-      <AppRoutes />
+      <AppRouter />
     </AuthGoogleProvider>
   );
 };
