@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AuthGoogleContext } from "../../context/authGoogle";
 import { Box, Flex, HStack, IconButton, Text } from "@chakra-ui/react";
 import React from "react";
-import { Sidebar } from "../../components/Sidebar";
+import { Sidebar } from "../components/Sidebar";
 
 export const Home = () => {
   const { user, signOut } = useContext(AuthGoogleContext);
