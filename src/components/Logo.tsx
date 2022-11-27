@@ -12,7 +12,6 @@ export const Logo = () => (
     gap={4}
   >
     <Box display="flex" alignItems="center" gap={2}>
-      <IconButton variant='outline' colorScheme='red' aria-label='STAI' icon={<LogoStai />} />
-    </Box>
+      </Box>
   </Flex>
 );

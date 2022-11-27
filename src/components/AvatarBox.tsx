@@ -1,11 +1,11 @@
-import React from "react";
-import { useContext } from "react";
-import { AuthGoogleContext } from "../context/authGoogle";
+//import React from "react";
+//import { useContext } from "react";
+//import { AuthGoogleContext } from "../../context/authGoogle";
 import { Avatar, Box, Flex, IconButton, Text } from "@chakra-ui/react";
 
 export const AvatarBox = () => {
-  const { user, signOut } = useContext(AuthGoogleContext);
-  let userLogado = JSON.parse(user);
+  //const { user, signOut } = useContext(AuthGoogleContext);
+  //let userLogado = JSON.parse(user);
 
   return(
     <Flex
@@ -19,7 +19,7 @@ export const AvatarBox = () => {
       gap={2}
       flexDirection={"row"}
     >
-      <Avatar name={userLogado.name} bg="teal.300" />
+      <Avatar name="Hayanna Oliveira" bg="teal.300" />
     </Flex>
   );
 };
