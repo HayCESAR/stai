@@ -12,7 +12,7 @@ export function Login() {
           fontSize='2xl'
           fontWeight='bold'
         >
-          entrar
+          Sign In
         </Text>
         <VStack spacing={4} alignItems='self-start'>
           <Text color='#718096' fontWeight='bold'>
