@@ -3,7 +3,6 @@ import LogoStai from './logo-stai.png';
 
 export const Logo = () => (
   <Flex
-    w="full"
     alignItems="center"
     justifyContent="space-between"
     flexDirection={"row"}
