@@ -8,15 +8,13 @@ export const Home = () => {
   const { user, signOut } = useContext(AuthGoogleContext);
   let userLogado = JSON.parse(user);
   
-  const [collapse, setCollapse] = React.useState(false);
-
   return (
     <HStack w="full" h="100vh" bg="gray.100" padding={10}>
       <Flex
         as="aside"
         w="full"
         h="full"
-        maxW={collapse ? 350 : 100}
+        maxW={350}
         bg="white"
         alignItems="start"
         padding={6}
@@ -25,7 +23,7 @@ export const Home = () => {
         transition="ease-in-out .2s"
         borderRadius="3xl"
       >
-        <Sidebar collapse={collapse} />
+        <Sidebar />
       </Flex>
 
       <Flex

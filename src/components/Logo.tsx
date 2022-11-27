@@ -11,7 +11,6 @@ export const Logo = () => (
   >
     <Box display="flex" alignItems="center" gap={2}>
       <Icon as={AiFillThunderbolt} fontSize={30} />
-      
     </Box>
     <IconButton
       variant="ghost"

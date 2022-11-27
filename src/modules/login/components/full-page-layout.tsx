@@ -5,7 +5,7 @@ import Logo from '../../common/assets/logo-stai.png'
 
 export const FullPageLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <Box>
+    
       <Box
         backgroundColor='#F5F5F8'
         h='100vh !important'
@@ -27,24 +27,24 @@ export const FullPageLayout = ({ children }: { children: ReactNode }) => {
         >
           <Image src={Logo} alt='stai' width={48} maxW='full' />
         </Box>
-        
+        <Container
+          p={8}
+          w={['none', 'lg']}
+          bg={['none', 'white']}
+          borderRadius={['none', 10]}
+          boxShadow={['none', '0px 0px 20px 2px #E5E5E5']}
+          maxW='container.md'
+          >
+            {children}
+            <Box mt={6}>
+              <Text textAlign='end' fontSize='xs' color='gray.300'>
+                © 2022 - STAI todos os direitos reservados
+              </Text>
+            </Box>
+          </Container>
       </Box>
-      <Container
-      p={8}
-      w={['none', 'lg']}
-      bg={['none', 'white']}
-      borderRadius={['none', 10]}
-      boxShadow={['none', '0px 0px 20px 2px #E5E5E5']}
-      maxW='container.md'
-      >
-        {children}
-        <Box mt={6}>
-          <Text textAlign='end' fontSize='xs' color='gray.300'>
-            © 2022 - STAI todos os direitos reservados
-          </Text>
-        </Box>
-      </Container>
-    </Box>
+      
+    
   )
 }
 
