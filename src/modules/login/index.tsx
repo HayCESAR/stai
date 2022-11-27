@@ -1,7 +1,29 @@
 import { Box, Button, Input, Text, VStack } from '@chakra-ui/react'
 import FullPageLayout from './components/full-page-layout'
+import LogoGoogle from '../common/assets/logo-google.png'
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import { app } from '../../services/firebaseConfig';
 
-export function Login() {
+const provider = new GoogleAuthProvider();
+
+export const Login = () => {
+  const auth = getAuth(app);
+
+  const signInGoogle = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        const user = result.user;
+        console.log(user)
+      }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        const email = error.customData.email;
+        const credential = GoogleAuthProvider.credentialFromError(error);
+      });
+  }
+
   return (
     <FullPageLayout>
       <Box>
@@ -15,8 +37,9 @@ export function Login() {
           Login
         </Text>
         <Box textAlign='center'>
-          <Button borderRadius='xl' px={12} size='md' mt={6} colorScheme='pink'>
-            Fazer login com Google
+          <Button borderRadius='xl' px={12} size='md' mt={6} colorScheme='pink' onClick={signInGoogle}>
+            <img src={LogoGoogle} alt="Google" />
+            <span>Fazer login com Google</span>
           </Button>
         </Box>
       </Box>
