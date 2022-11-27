@@ -5,34 +5,37 @@ import Logo from '../../common/assets/logo-stai.png'
 
 export const FullPageLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <Box
-      backgroundColor='#F5F5F8'
-      h='100vh !important'
-      w='100%'
-      display='flex'
-      flexDir='column'
-      alignItems='flex-start'
-      justifyContent='center'
-      overflowY='auto'
-      p={[1, 6]}
-    >
+    <Box>
       <Box
-        w='full'
+        backgroundColor='#F5F5F8'
+        h='100vh !important'
+        w='100%'
         display='flex'
-        alignItems='center'
+        flexDir='column'
+        alignItems='flex-start'
         justifyContent='center'
-        as='header'
-        pb={[3, 7]}
+        overflowY='auto'
+        p={[1, 6]}
       >
-        <Image src={Logo} alt='stai' width={48} maxW='full' />
+        <Box
+          w='full'
+          display='flex'
+          alignItems='center'
+          justifyContent='center'
+          as='header'
+          pb={[3, 7]}
+        >
+          <Image src={Logo} alt='stai' width={48} maxW='full' />
+        </Box>
+        
       </Box>
       <Container
-        p={8}
-        w={['none', 'lg']}
-        bg={['none', 'white']}
-        borderRadius={['none', 10]}
-        boxShadow={['none', '0px 0px 20px 2px #E5E5E5']}
-        maxW='container.md'
+      p={8}
+      w={['none', 'lg']}
+      bg={['none', 'white']}
+      borderRadius={['none', 10]}
+      boxShadow={['none', '0px 0px 20px 2px #E5E5E5']}
+      maxW='container.md'
       >
         {children}
         <Box mt={6}>

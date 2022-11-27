@@ -25,7 +25,6 @@ export const Login = () => {
           </Text>
           <Box textAlign='center'>
             <Button borderRadius='xl' px={12} size='md' mt={6} colorScheme='pink' onClick={() => signInGoogle()}>
-
               <span>Fazer login com Google</span>
             </Button>
           </Box>
