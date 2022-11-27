@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { AuthGoogleContext } from "../../context/authGoogle";
+import { AuthGoogleContext } from "../context/authGoogle";
 import { Avatar, Box, Flex, IconButton, Text } from "@chakra-ui/react";
 
 export const AvatarBox = () => {
@@ -19,7 +19,7 @@ export const AvatarBox = () => {
       gap={2}
       flexDirection={"row"}
     >
-      <Avatar name="Design To Chakra UI" bg="teal.300" />
+      <Avatar name={userLogado.name} bg="teal.300" />
     </Flex>
   );
 };
