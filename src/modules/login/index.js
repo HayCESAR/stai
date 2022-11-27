@@ -11,7 +11,6 @@ export const Login = () => {
     await signInGoogle();
   }
   if (!signed) {
-  
     return (
       <FullPageLayout>
         <Box>
@@ -33,7 +32,6 @@ export const Login = () => {
         </Box>
       </FullPageLayout>
     )
-
   } else {
     return <Navigate to="/Home" />;
   }
