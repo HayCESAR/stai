@@ -2,11 +2,13 @@ import React from "react";
 import { Box } from "@chakra-ui/react";
 import { AvatarBox } from "./AvatarBox";
 import { Logo } from "./Logo";
+import { Navigation } from "./Navigation";
 
 export const Sidebar = () => (
   <React.Fragment>
     <Box w="full">
       <Logo />
+      <Navigation />
     </Box>
     <AvatarBox />
   </React.Fragment>
