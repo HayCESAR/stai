@@ -17,7 +17,7 @@ export default function NavHoverBox({ title, icon}: any) {
                 height={0}
                 borderTop="10px solid transparent"
                 borderBottom="10px solid transparent"
-                borderRight="10px solid #ABA5A5"
+                borderRight="10px solid #D8D8D8"
             />
             <Flex
                 h={200}
@@ -25,12 +25,12 @@ export default function NavHoverBox({ title, icon}: any) {
                 flexDir="column"
                 alignItems="center"
                 justify="center"
-                backgroundColor="#ABA5A5"
+                backgroundColor="#D8D8D8"
                 borderRadius="10px"
                 color="#fff"
                 textAlign="center"
             >
-                <Icon as={icon} fontSize="3xl" mb={4} />
+                <Icon as={icon} fontSize="3xl" mb={4}/>
                 <Heading size="md" fontWeight="normal">{title}</Heading>
             </Flex>
         </>
