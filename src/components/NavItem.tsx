@@ -15,7 +15,7 @@ export default function NavItem({ icon, title, active, navSize }: any) {
             mt={30}
             flexDir="column"
             w="100%"
-            alignItems={navSize == "small" ? "center" : "center"}
+            alignItems={navSize == "small" ? "center" : "flex-start"}
         >
             <Menu placement="right">
                 <Link
@@ -23,7 +23,7 @@ export default function NavItem({ icon, title, active, navSize }: any) {
                     p={3}
                     borderRadius={8}
                     _hover={{ textDecor: 'none', backgroundColor: "#D8D8D8" }}
-                    
+                    w={navSize == "small" ? "20px" : "100%"}
                 >
                     <MenuButton>
                         <Flex>
