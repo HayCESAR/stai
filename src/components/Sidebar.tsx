@@ -31,6 +31,7 @@ export default function Sidebar() {
             borderRadius={navSize == "small" ? "15px" : "30px"}
             w={navSize == "small" ? "75px" : "15%"}
             flexDir="column"
+            justifyContent="space-between"
         >
             <Flex
                 p="5%"
@@ -43,14 +44,6 @@ export default function Sidebar() {
                     <Image src={LogoStai} alt='stai' />
                 </Flex>
                 <Divider display={navSize == "small" ? "none" : "flex"} />
-            </Flex>
-            <Flex
-                p="5%"
-                flexDir="column"
-                w="100%"
-                alignItems={navSize == "small" ? "center" : "flex-start"}
-                as="nav"
-            >
                 <IconButton
                     background="none"
                     mt={5}
