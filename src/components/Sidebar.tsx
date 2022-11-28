@@ -18,7 +18,7 @@ import NavItem from './NavItem'
 import { AvatarBox } from './AvatarBox'
 
 export default function Sidebar() {
-    const [navSize, changeNavSize] = useState("small")
+    const [navSize, changeNavSize] = useState("large")
     return (
         <Flex
             pos="sticky"
