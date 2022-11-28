@@ -17,7 +17,7 @@ import {
     FiSettings
 } from 'react-icons/fi'
 import { IoPawOutline } from 'react-icons/io5'
-import NavItem from '../components/NavItem'
+import NavItem from './NavItem'
 import { AvatarBox } from './AvatarBox'
 
 export default function Sidebar() {
