@@ -26,11 +26,12 @@ export const AvatarBox  = ({navSize}) => {
         gap={4}
         justifyContent="center"
         alignItems="flex-start"
+        display={navSize == "small" ? "none" : "flex"}
       >
-        <Text fontWeight="bold" pb="0" lineHeight={0} display={navSize == "small" ? "none" : "flex"}>
+        <Text fontWeight="bold" pb="0" lineHeight={0}>
           Olá,
         </Text>
-        <Text as="small" color="gray.500" fontSize={12} lineHeight={0} display={navSize == "small" ? "none" : "flex"}>
+        <Text as="small" color="gray.500" fontSize={12} lineHeight={0}>
           {userLogado.displayName}
         </Text>
       </Flex>

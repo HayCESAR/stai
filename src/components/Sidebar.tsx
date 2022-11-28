@@ -63,7 +63,7 @@ export default function Sidebar() {
                 mb={4}
             >
                 <Divider display={navSize == "small" ? "none" : "flex"} />
-                <Flex mt={4} align="center">
+                <Flex mt={4} align="center" justifyContent="space-between">
                     <AvatarBox navSize={navSize} />
                 </Flex>
             </Flex>
