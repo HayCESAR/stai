@@ -28,10 +28,10 @@ export const AvatarBox  = ({navSize}) => {
         alignItems="flex-start"
       >
         <Text fontWeight="bold" pb="0" lineHeight={0} display={navSize == "small" ? "none" : "flex"}>
-          {userLogado.displayName}
+          Olá,
         </Text>
         <Text as="small" color="gray.500" fontSize={12} lineHeight={0} display={navSize == "small" ? "none" : "flex"}>
-        {userLogado.email}
+          {userLogado.displayName}
         </Text>
       </Flex>
     </Flex>

@@ -20,14 +20,14 @@ export default function NavItem({ icon, title, description, active, navSize }: a
         >
             <Menu placement="right">
                 <Link
-                    backgroundColor={active && "#AEC8CA"}
+                    backgroundColor={active && "#ABABAB"}
                     p={3}
                     borderRadius={8}
-                    _hover={{ textDecor: 'none', backgroundColor: "#AEC8CA" }}
+                    _hover={{ textDecor: 'none', backgroundColor: "#ABABAB" }}
                 >
                     <MenuButton w="100%">
                         <Flex>
-                            <Icon as={icon} fontSize="xl" color={active ? "#ABA5A5" : "gray.500"} />
+                            <Icon as={icon} fontSize="xl" color={active ? "#82AAAD" : "gray.500"} />
                             <Text ml={5} display={navSize == "small" ? "none" : "flex"}>{title}</Text>
                         </Flex>
                     </MenuButton>
@@ -39,7 +39,7 @@ export default function NavItem({ icon, title, description, active, navSize }: a
                     h={200}
                     ml={5}
                 >
-                    <NavHoverBox title={title} icon={icon} description={description} />
+                    <NavHoverBox title={title} icon={icon} />
                 </MenuList>
             </Menu>
         </Flex>

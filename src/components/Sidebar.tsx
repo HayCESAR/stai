@@ -42,7 +42,7 @@ export default function Sidebar() {
                     mt={5}
                     _hover={{ background: 'none' }}
                     icon={<FiMenu />}
-                    aria-label='Expand'
+                    aria-label='Menu'
                     onClick={() => {
                         if (navSize == "small")
                             changeNavSize("large")
