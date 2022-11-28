@@ -27,8 +27,8 @@ export default function NavItem({ icon, title, description, active, navSize }: a
                 >
                     <MenuButton w="100%">
                         <Flex>
-                            <Icon as={icon} fontSize="xl" color={active ? "#82AAAD" : "gray.500"} />
-                            <Text ml={5} display={navSize == "small" ? "none" : "flex"}>{title}</Text>
+                            <Icon as={icon} fontSize="xl" color={active ? "#F2F2F2" : "gray.500"} />
+                            <Text ml={5} display={navSize == "small" ? "none" : "flex"} color={active ? "#F2F2F2" : "gray.500"}>{title}</Text>
                         </Flex>
                     </MenuButton>
                 </Link>
