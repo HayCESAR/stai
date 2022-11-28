@@ -15,7 +15,7 @@ export default function NavItem({ icon, title, active, navSize }: any) {
             mt={30}
             flexDir="column"
             w="100%"
-            alignItems={navSize == "small" ? "center" : "flex-start"}
+            alignItems={navSize == "small" ? "center" : "center"}
         >
             <Menu placement="right">
                 <Link
