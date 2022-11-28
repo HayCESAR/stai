@@ -21,7 +21,7 @@ export const FullPageLayout = ({ children }: { children: ReactNode }) => {
           w='full'
           display='flex'
           alignItems='center'
-          justifyContent='center'
+           justifyContent='center'
           as='header'
           pb={[3, 7]}
         >
@@ -36,7 +36,7 @@ export const FullPageLayout = ({ children }: { children: ReactNode }) => {
           maxW='container.md'
           >
             {children}
-            <Box mt={6}>
+            <Box mt={6} justifyContent='center'>
               <Text textAlign='end' fontSize='xs' color='gray.300'>
                 © 2022 - STAI todos os direitos reservados
               </Text>

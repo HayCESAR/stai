@@ -18,7 +18,6 @@ import {
             href=""
             gap={1}
             display="flex"
-            alignItems="center"
             _hover={{ textDecoration: "none", color: "black" }}
             fontWeight="medium"
             color={isActive ? "black" : "gray.400"}

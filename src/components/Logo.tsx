@@ -1,5 +1,5 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
-import LogoStai from './logo-stai.png';
+import { Box, Flex, createIcon } from "@chakra-ui/react";
+import LogoStai from './logo-stai.svg';
 
 export const Logo = () => (
   <Flex
@@ -8,12 +8,6 @@ export const Logo = () => (
     flexDirection={"row"}
     gap={4}
   >
-    <Box display="flex" alignItems="center" gap={2}>
-      <Image
-        boxSize='100px'
-        src={LogoStai}
-        alt='STAI'
-      />
-    </Box>
+    
   </Flex>
 );
