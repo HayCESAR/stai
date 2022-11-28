@@ -26,7 +26,7 @@ export default function Sidebar() {
         <Flex
             pos="sticky"
             left="5"
-            h="95vh"
+            h="100vh"
             marginTop="2.5vh"
             boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
             borderRadius={navSize == "small" ? "15px" : "30px"}
@@ -55,12 +55,8 @@ export default function Sidebar() {
                     }}
                 />
                 <NavItem navSize={navSize} icon={FiHome} title="Dashboard" description="This is the description for the dashboard." />
-                <NavItem navSize={navSize} icon={FiCalendar} title="Calendar" active />
-                <NavItem navSize={navSize} icon={FiUser} title="Clients" />
-                <NavItem navSize={navSize} icon={IoPawOutline} title="Animals" />
-                <NavItem navSize={navSize} icon={FiDollarSign} title="Stocks" />
-                <NavItem navSize={navSize} icon={FiBriefcase} title="Reports" />
-                <NavItem navSize={navSize} icon={FiSettings} title="Settings" />
+                <NavItem navSize={navSize} icon={FiCalendar} title="Predict" active />
+                <NavItem navSize={navSize} icon={FiUser} title="Update File" />
             </Flex>
 
             <Flex
