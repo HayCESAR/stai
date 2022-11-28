@@ -21,7 +21,7 @@ import LogoStai from './logo-stai.png'
 import { AvatarBox } from './AvatarBox'
 
 export default function Sidebar() {
-    const [navSize, changeNavSize] = useState("large")
+    const [navSize, changeNavSize] = useState("small")
     return (
         <Flex
             pos="sticky"
