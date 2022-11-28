@@ -25,7 +25,7 @@ export default function NavItem({ icon, title, active, navSize }: any) {
                     _hover={{ textDecor: 'none', backgroundColor: "#D8D8D8" }}
                     w="100%"
                 >
-                    <MenuButton w="100%">
+                    <MenuButton>
                         <Flex>
                             <Icon as={icon} fontSize="xl" color={active ? "#F2F2F2" : "gray.500"} />
                             <Text ml={5} display={navSize == "small" ? "none" : "flex"} color={active ? "#F2F2F2" : "gray.500"}>{title}</Text>
