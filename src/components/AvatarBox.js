@@ -27,10 +27,10 @@ export const AvatarBox = () => {
         justifyContent="center"
         alignItems="flex-start"
       >
-        <Text fontSize="sm" fontWeight="bold" pb="0" lineHeight={0}>
+        <Text fontWeight="bold" pb="0" lineHeight={0} display={navSize == "small" ? "none" : "flex"}>
           {userLogado.displayName}
         </Text>
-        <Text as="small" color="gray.500" fontSize={12} lineHeight={0}>
+        <Text as="small" color="gray.500" fontSize={12} lineHeight={0} display={navSize == "small" ? "none" : "flex"}>
         {userLogado.email}
         </Text>
       </Flex>
