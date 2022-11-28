@@ -19,10 +19,10 @@ export default function NavItem({ icon, title, description, active, navSize }: a
         >
             <Menu placement="right">
                 <Link
-                    backgroundColor={active && "#ABABAB"}
+                    backgroundColor={active && "#A4A4A4"}
                     p={3}
                     borderRadius={8}
-                    _hover={{ textDecor: 'none', backgroundColor: "#ABABAB" }}
+                    _hover={{ textDecor: 'none', backgroundColor: "#D8D8D8" }}
                 >
                     <MenuButton w="100%">
                         <Flex>
