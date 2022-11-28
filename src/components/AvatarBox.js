@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { AuthGoogleContext } from "../context/authGoogle";
 import { Avatar, Box, Flex, IconButton, Text } from "@chakra-ui/react";
 
-export const AvatarBox = () => {
+export const AvatarBox  = ({navSize}) => {
   const { user, signOut } = useContext(AuthGoogleContext);
   let userLogado = JSON.parse(user);
 
