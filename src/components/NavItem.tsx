@@ -23,7 +23,7 @@ export default function NavItem({ icon, title, active, navSize }: any) {
                     p={3}
                     borderRadius={8}
                     _hover={{ textDecor: 'none', backgroundColor: "#D8D8D8" }}
-                    w="100%"
+                    
                 >
                     <MenuButton>
                         <Flex>
