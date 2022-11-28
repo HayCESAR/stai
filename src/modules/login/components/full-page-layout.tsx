@@ -37,7 +37,7 @@ export const FullPageLayout = ({ children }: { children: ReactNode }) => {
           >
             {children}
             <Box mt={6} justifyContent='center'>
-              <Text textAlign='end' fontSize='xs' color='gray.300'>
+              <Text textAlign='center' fontSize='xs' color='gray.300'>
                 © 2022 - STAI todos os direitos reservados
               </Text>
             </Box>

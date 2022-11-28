@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
 import {
     Flex,
-    Box,
-    Text,
     IconButton,
     Divider,
-    Avatar,
-    Heading,
     Image
 } from '@chakra-ui/react'
 import {
@@ -15,7 +11,6 @@ import {
     FiCalendar,
     FiUser
 } from 'react-icons/fi'
-import { IoPawOutline } from 'react-icons/io5'
 import NavItem from './NavItem'
 import LogoStai from './logo-stai.png'
 import { AvatarBox } from './AvatarBox'
