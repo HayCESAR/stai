@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import {
     Flex,
+    Box,
     Text,
     IconButton,
     Divider,
     Avatar,
-    Heading
+    Heading,
+    Image
 } from '@chakra-ui/react'
 import {
     FiMenu,
@@ -15,6 +17,7 @@ import {
 } from 'react-icons/fi'
 import { IoPawOutline } from 'react-icons/io5'
 import NavItem from './NavItem'
+import LogoStai from './logo-stai.png'
 import { AvatarBox } from './AvatarBox'
 
 export default function Sidebar() {
@@ -30,6 +33,18 @@ export default function Sidebar() {
             flexDir="column"
             justifyContent="space-between"
         >
+            <Flex
+                p="5%"
+                flexDir="column"
+                w="100%"
+                alignItems={navSize == "small" ? "center" : "flex-start"}
+                mb={4}
+            >
+                <Flex mt={4} align="center" justifyContent="space-between">
+                    <Image src={LogoStai} alt='stai' />
+                </Flex>
+                <Divider display={navSize == "small" ? "none" : "flex"} />
+            </Flex>
             <Flex
                 p="5%"
                 flexDir="column"
