@@ -10,7 +10,18 @@ export const Home = () => {
   
   return (
     <HStack w="full" h="100vh" bg="gray.100" padding={10}>
-      <Sidebar />
+      <Flex
+        as="main"
+        w="full"
+        h="full"
+        bg="white"
+        flexDirection="column"
+        position="relative"
+        borderRadius="3xl"
+      >
+        <Sidebar />
+      </Flex>
+      
 
       <Flex
         as="main"
