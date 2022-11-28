@@ -9,7 +9,7 @@ import {
     MenuList
 } from '@chakra-ui/react'
 
-export default function NavItem({ icon, title, description, active, navSize }: any) {
+export default function NavItem({ icon, title, active, navSize }: any) {
     return (
         <Flex
             mt={30}
@@ -23,6 +23,7 @@ export default function NavItem({ icon, title, description, active, navSize }: a
                     p={3}
                     borderRadius={8}
                     _hover={{ textDecor: 'none', backgroundColor: "#D8D8D8" }}
+                    w="100%"
                 >
                     <MenuButton w="100%">
                         <Flex>

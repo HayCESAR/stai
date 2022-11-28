@@ -18,7 +18,7 @@ import NavItem from './NavItem'
 import { AvatarBox } from './AvatarBox'
 
 export default function Sidebar() {
-    const [navSize, changeNavSize] = useState("large")
+    const [navSize, changeNavSize] = useState("small")
     return (
         <Flex
             pos="sticky"
@@ -26,7 +26,7 @@ export default function Sidebar() {
             h="100%"
             boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
             borderRadius={navSize == "small" ? "15px" : "30px"}
-            w={navSize == "small" ? "75px" : "20%"}
+            w={navSize == "small" ? "75px" : "15%"}
             flexDir="column"
             justifyContent="space-between"
         >
