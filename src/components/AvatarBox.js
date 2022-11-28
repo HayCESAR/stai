@@ -28,7 +28,7 @@ export const AvatarBox = () => {
         alignItems="flex-start"
       >
         <Text fontSize="sm" fontWeight="bold" pb="0" lineHeight={0}>
-          Olá, {userLogado.displayName}
+          {userLogado.displayName}
         </Text>
         <Text as="small" color="gray.500" fontSize={12} lineHeight={0}>
         {userLogado.email}

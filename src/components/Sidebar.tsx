@@ -11,10 +11,7 @@ import {
     FiMenu,
     FiHome,
     FiCalendar,
-    FiUser,
-    FiDollarSign,
-    FiBriefcase,
-    FiSettings
+    FiUser
 } from 'react-icons/fi'
 import { IoPawOutline } from 'react-icons/io5'
 import NavItem from './NavItem'
@@ -26,7 +23,7 @@ export default function Sidebar() {
         <Flex
             pos="sticky"
             left="5"
-            h="100vh"
+            h="95vh"
             marginTop="2.5vh"
             boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
             borderRadius={navSize == "small" ? "15px" : "30px"}
@@ -54,8 +51,8 @@ export default function Sidebar() {
                             changeNavSize("small")
                     }}
                 />
-                <NavItem navSize={navSize} icon={FiHome} title="Dashboard" description="This is the description for the dashboard." />
-                <NavItem navSize={navSize} icon={FiCalendar} title="Predict" active />
+                <NavItem navSize={navSize} icon={FiHome} title="Dashboard" active />
+                <NavItem navSize={navSize} icon={FiCalendar} title="Predict" />
                 <NavItem navSize={navSize} icon={FiUser} title="Update File" />
             </Flex>
 
