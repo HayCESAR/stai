@@ -30,9 +30,9 @@ export const AvatarBox  = ({navSize}) => {
         display={navSize == "small" ? "none" : "flex"}
       >
         <Text fontWeight="bold" pb="0" lineHeight={0}>
-          <ScaleText>
+          
             Olá, {userLogado.displayName}
-          </ScaleText>  
+           
         </Text>
         <Text as="small" color="gray.500" fontSize={12} lineHeight={0} ellipsizeMode='tail'>
           {userLogado.email}
