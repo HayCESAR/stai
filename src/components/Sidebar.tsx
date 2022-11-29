@@ -54,7 +54,7 @@ export default function Sidebar() {
                 />
                 <NavItem navSize={navSize} icon={FiHome} title="Dashboard" active />
                 <NavItem navSize={navSize} icon={FiCalendar} title="Predição" />
-                <NavItem navSize={navSize} icon={FiUser} title="Arquivos de dados" />
+                <NavItem navSize={navSize} icon={FiUser} title="Dataset" />
                 <NavItem navSize={navSize} icon={FiUser} title="Logout" />
             </Flex>
 
