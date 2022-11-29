@@ -1,4 +1,5 @@
 import React from "react";
+import ScaleText from "react-scale-text";
 import { useContext } from "react";
 import { AuthGoogleContext } from "../context/authGoogle";
 import { Avatar, Box, Flex, IconButton, Text } from "@chakra-ui/react";
